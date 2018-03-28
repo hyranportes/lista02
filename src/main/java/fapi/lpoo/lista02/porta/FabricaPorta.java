@@ -6,8 +6,8 @@ public class FabricaPorta {
     private int quantidadeFuncionario;
     private String cnpj;
 
-    public fabricarPorta(float tamanho, String cor, String modelo, String material){
-        return new Porta (tamanho, cor, modelo, material)
+    public Porta fabricarPorta(float tamanho, String cor, String modelo, String material){
+        return new Porta (tamanho, cor, modelo, material);
     }
 
     public String getNome() {

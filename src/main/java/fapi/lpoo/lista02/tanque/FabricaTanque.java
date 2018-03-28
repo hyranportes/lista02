@@ -6,7 +6,7 @@ public class FabricaTanque {
     private int quantidadeFuncionarios;
     private String cnpj;
 
-    public fabricarTanque(float capacidade, String material){
+    public Tanque fabricarTanque(float capacidade, String material){
         return new Tanque (capacidade, material);
     }
 

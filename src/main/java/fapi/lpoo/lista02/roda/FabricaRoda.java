@@ -6,7 +6,7 @@ public class FabricaRoda {
     private int quantidadeFuncionarios;
     private String cnpj;
 
-    public fabricarRoda(int aro, String material){
+    public Roda fabricarRoda(int aro, String material){
         return new Roda (aro, material);
     }
 
