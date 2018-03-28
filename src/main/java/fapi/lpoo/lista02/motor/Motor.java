@@ -5,11 +5,13 @@ public class Motor {
     private double potencia = 2.0;
     private int peso = 300;
     private String material = "titanio";
+    private String idMotor = "ABC16E587TH19WX6";
 
 
-    public Motor(double potencia, int peso, String material) {
+    public Motor(double potencia, int peso, String material, String idMotor) {
         this.potencia = potencia;
         this.peso = peso;
         this.material = material;
+        this.idMotor = idMotor;
     }
 }
