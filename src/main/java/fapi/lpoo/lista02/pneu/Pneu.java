@@ -40,4 +40,12 @@ public class Pneu {
     public void setMaterial(String material) {
         this.material = material;
     }
+
+    public int getDurabilidade() {
+        return durabilidade;
+    }
+
+    public void setDurabilidade(int durabilidade) {
+        this.durabilidade = durabilidade;
+    }
 }

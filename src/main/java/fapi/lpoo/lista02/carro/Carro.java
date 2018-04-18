@@ -13,20 +13,76 @@ public class Carro {
 
     private Motor motor;
     private Pneu pneu[] = new Pneu[4];
-    private Porta porta;
-    private Roda roda;
+    private Roda roda[] = new Roda[4];
+    private Porta porta[]= new Porta[4];
     private Tanque tanque;
     private Banco banco[] = new Banco[3];
     private TetoSolar tetoSolar;
     private Bluetooth bluetooth;
-    private Pneu step;
+    private Pneu stepPneu;
+    private Roda stepRoda;
+    private float autonomia;
 
-    public Carro(Motor motor, Pneu[] pneu, Porta porta, Roda roda, Tanque tanque, Banco[] banco) {
+    public void durabilidadePneu(int durabilidade){
+        for (int i=0; i<4; i++){
+            this.pneu[i].setDurabilidade(durabilidade);
+        }
+    }
+
+    public Carro(Motor motor, Pneu[] pneu, Porta[] porta, Roda[] roda, Tanque tanque, Banco[] banco) {
         this.motor = motor;
         this.pneu = pneu;
         this.porta = porta;
         this.roda = roda;
         this.tanque = tanque;
+        this.banco = banco;
+    }
+
+    public Motor getMotor() {
+        return motor;
+    }
+
+    public void setMotor(Motor motor) {
+        this.motor = motor;
+    }
+
+    public Pneu[] getPneu() {
+        return pneu;
+    }
+
+    public void setPneu(Pneu[] pneu) {
+        this.pneu = pneu;
+    }
+
+    public Porta[] getPorta() {
+        return porta;
+    }
+
+    public void setPorta(Porta[] porta) {
+        this.porta = porta;
+    }
+
+    public Roda[] getRoda() {
+        return roda;
+    }
+
+    public void setRoda(Roda[] roda) {
+        this.roda = roda;
+    }
+
+    public Tanque getTanque() {
+        return tanque;
+    }
+
+    public void setTanque(Tanque tanque) {
+        this.tanque = tanque;
+    }
+
+    public Banco[] getBanco() {
+        return banco;
+    }
+
+    public void setBanco(Banco[] banco) {
         this.banco = banco;
     }
 
@@ -46,12 +102,27 @@ public class Carro {
         this.bluetooth = bluetooth;
     }
 
-    public Pneu getStep() {
-        return step;
+    public Pneu getStepPneu() {
+        return stepPneu;
     }
 
-    public void setStep(Pneu step) {
-        this.step = step;
+    public void setStepPneu(Pneu stepPneu) {
+        this.stepPneu = stepPneu;
     }
 
+    public Roda getStepRoda() {
+        return stepRoda;
+    }
+
+    public void setStepRoda(Roda stepRoda) {
+        this.stepRoda = stepRoda;
+    }
+
+    public float getAutonomia() {
+        return autonomia;
+    }
+
+    public void setAutonomia(float autonomia) {
+        this.autonomia = autonomia;
+    }
 }
