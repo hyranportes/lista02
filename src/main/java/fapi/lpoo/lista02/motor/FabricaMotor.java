@@ -6,8 +6,8 @@ public class FabricaMotor {
     private int quantidadeFuncionarios;
     private String cnpj;
 
-    public Motor fabricarMotor(float potencia, int peso, String material, String idMotor){
-        return new Motor (potencia, peso, material, idMotor);
+    public Motor fabricarMotor(float potencia, int peso, String material, String idMotor, float autonomia){
+        return new Motor (potencia, peso, material, idMotor, autonomia);
     }
 
     public String getNome() {

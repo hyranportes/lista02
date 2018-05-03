@@ -29,6 +29,11 @@ public class Carro {
         }
     }
 
+    public void andar (float kmPercorrido){
+        tanque.kmLitro(motor.getAutonomia(),kmPercorrido);
+
+    }
+
     public Carro(Motor motor, Pneu[] pneu, Porta[] porta, Roda[] roda, Tanque tanque, Banco[] banco) {
         this.motor = motor;
         this.pneu = pneu;

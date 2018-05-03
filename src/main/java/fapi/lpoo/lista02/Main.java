@@ -15,7 +15,6 @@ public class Main {
         carro.setAutonomia(scanner.nextFloat());
         System.out.println("Insira a durabilidade dos pneus: ");
         carro.durabilidadePneu(scanner.nextInt());
-
-
+        carro.andar(10);
     }
 }

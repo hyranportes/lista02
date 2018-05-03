@@ -17,7 +17,7 @@ public class FabricaCarro {
 
     public Carro fabricarCarro(){
         FabricaMotor fabricaMotor = new FabricaMotor();
-        Motor motor = fabricaMotor.fabricarMotor(100,100,"Ferro","1");
+        Motor motor = fabricaMotor.fabricarMotor(100,100,"Ferro","1", 13);
 
         FabricaPneu fabricaPneu = new FabricaPneu();
         Pneu pneu[] = new Pneu[4];
